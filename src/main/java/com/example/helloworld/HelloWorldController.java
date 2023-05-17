@@ -9,7 +9,7 @@ import java.time.format.DateTimeFormatter;
 
 @RestController
 public class HelloWorldController {
-  @GetMapping("/nowTime")
+  @GetMapping("/current-datetime")
   public static String nowTime() {
     LocalDateTime nowTime = LocalDateTime.now();
     DateTimeFormatter formattingTime = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mmです");
